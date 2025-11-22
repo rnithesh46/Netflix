@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+
+        .main {
+            height: 75vh;
+            background-image: url(assets/images/bg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .main .box {
+            height: 75vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            background-color: black;
+            opacity: 0.55;
+        }
+
+        .nav img {
+            width: 114px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 62px;
+            max-width: 60vw;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .nav button {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero {
+            font-family: "Martel Sans", sans-serif;
+            height: calc(100% - 62px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            position: relative;
+            /* z-index: 10; */
+            gap: 10px;
+            padding: 0px 30px;
+            
+        }
+        .hero> :nth-child(1){
+            
+            font-weight: bolder;
+            font-size: 48px;
+            text-align: center;
+        }
+        .hero> :nth-child(2){
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+
+        }
+        .hero> :nth-child(3){
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .seperate{
+            height: 10px;
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <span><img src="assets/images/logo.svg" alt=""></span>
+            <div class="button">
+                <button>English</button>
+                <button>Sign In</button>
+            </div>
+        </div>
+        <div class="box"></div>
+        <div class="hero">
+            <span>Enjoy big movies, hit series and more for $ 149.</span>
+            <span>Join today. Cancle anytime.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div>
+                <input type="text" placeholder="Email Address">
+                <button>Get Started</button>
+            </div>
+        </div>
+        <div class="seperate"></div>
+    </div>
+</body>
+
+</html>
